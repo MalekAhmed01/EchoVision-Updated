@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f8f8f8;
+}
+
+.sidebar {
+    width: 200px;
+    background: white;
+    height: 100vh;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+nav ul li i {
+    font-size: 18px;
+    color: #007bff;
+}
+
+nav ul li.active {
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+}
+
+.add-subscription-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.custom-select select {
+    appearance: none;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-select i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 40px;
+}
+
+.create-btn {
+    background: #ddd;
+    color: gray;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-size: 16px;
+}

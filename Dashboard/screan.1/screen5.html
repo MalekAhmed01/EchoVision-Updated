@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User</title>
+    <link rel="stylesheet" href="screen5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">E</div>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-tachometer-alt"></i> Overview</li>
+                <li class="active"><i class="fa-solid fa-user"></i> Users</li>
+                <li><i class="fa-solid fa-file-invoice-dollar"></i> Subscription</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <span>Users / Update User</span>
+            <span class="admin">Admin</span>
+        </header>
+
+        <section class="update-user-form">
+            <form>
+                <div class="input-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" value="Noah">
+                </div>
+
+                <div class="input-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" value="Sullivan">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="noah@gmail.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="password" value="">
+                        <i class="fa-solid fa-eye-slash toggle-password"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="password-container">
+                        <input type="password" id="confirm-password" value="">
+                        <i class="fa-solid fa-eye-slash toggle-password"></i>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="is-admin">
+                    <label for="is-admin">Is Admin?</label>
+                </div>
+
+                <button type="submit" class="update-btn" disabled>Update</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        document.querySelectorAll(".toggle-password").forEach(icon => {
+            icon.addEventListener("click", () => {
+                let input = icon.previousElementSibling;
+                if (input.type === "password") {
+                    input.type = "text";
+                    icon.classList.replace("fa-eye-slash", "fa-eye");
+                } else {
+                    input.type = "password";
+                    icon.classList.replace("fa-eye", "fa-eye-slash");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Management</title>
+    <link rel="stylesheet" href="screen3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">E</div>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-tachometer-alt"></i> Overview</li>
+                <li><i class="fa-solid fa-user"></i> Users</li>
+                <li class="active"><i class="fa-solid fa-file-invoice-dollar"></i> Subscription</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <span>Subscriptions</span>
+            <span class="admin">Admin</span>
+        </header>
+
+        <div class="top-bar">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <button class="add-user-btn">Add User</button>
+        </div>
+
+        <section class="subscription-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Subscription Type</th>
+                        <th>Creation Date</th>
+                        <th>Expiration Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>James Carter</td><td>Yearly</td><td>2024-01-10</td><td>2025-01-10</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>2</td><td>Ethan Reynolds</td><td>Yearly</td><td>2024-03-05</td><td>2025-03-05</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>3</td><td>Lucas Bennett</td><td>Yearly</td><td>2024-06-20</td><td>2025-06-20</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>4</td><td>Noah Sullivan</td><td>Monthly</td><td>2024-07-10</td><td>2024-08-10</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>5</td><td>Daniel Foster</td><td>Monthly</td><td>2024-04-20</td><td>2024-05-20</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>6</td><td>Oliver Hayes</td><td>Yearly</td><td>2024-09-01</td><td>2025-09-01</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>7</td><td>Henry Mitchell</td><td>Yearly</td><td>2024-09-01</td><td>2025-09-01</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>8</td><td>Jack Thompson</td><td>Monthly</td><td>2024-02-15</td><td>2024-03-15</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="pagination">
+            <span class="prev">← Previous</span>
+            <span class="page active">1</span>
+            <span class="page">2</span>
+            <span class="page">3</span>
+            <span class="dots">...</span>
+            <span class="page">67</span>
+            <span class="page">68</span>
+            <span class="next">Next →</span>
+        </div>
+    </div>
+</body>
+</html>

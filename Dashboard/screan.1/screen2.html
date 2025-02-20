@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="screen2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">E</div>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-tachometer-alt"></i> Overview</li>
+                <li class="active"><i class="fa-solid fa-user"></i> Users</li>
+                <li><i class="fa-solid fa-file-invoice-dollar"></i> Subscription</li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <span>User</span>
+            <span class="admin">Admin</span>
+        </header>
+
+        <div class="top-bar">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <button class="add-user-btn">Add User</button>
+        </div>
+
+        <section class="user-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>James</td><td>Carter</td><td>+1 (312) 555-8392</td><td>123 Oakwood Drive, Los Angeles, CA 90001</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>2</td><td>Ethan</td><td>Reynolds</td><td>+1 (415) 555-6721</td><td>456 Maple Street, New York, NY 10011</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>3</td><td>Lucas</td><td>Bennett</td><td>+1 (646) 555-2143</td><td>789 Birch Avenue, Chicago, IL 60614</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>4</td><td>Noah</td><td>Sullivan</td><td>+1 (702) 555-9087</td><td>1012 Cedar Lane, Miami, FL 33101</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>5</td><td>Daniel</td><td>Foster</td><td>+1 (213) 555-3425</td><td>234 Pinecrest Road, Denver, CO 80202</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>6</td><td>Oliver</td><td>Hayes</td><td>+1 (305) 555-7654</td><td>567 Elm Boulevard, San Francisco, CA 94102</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>7</td><td>Henry</td><td>Mitchell</td><td>+1 (503) 555-1298</td><td>890 Redwood Court, Seattle, WA 98101</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                    <tr><td>8</td><td>Jack</td><td>Thompson</td><td>+1 (720) 555-4673</td><td>135 Willow Way, Houston, TX 77002</td><td><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="pagination">
+            <span class="prev">← Previous</span>
+            <span class="page active">1</span>
+            <span class="page">2</span>
+            <span class="page">3</span>
+            <span class="dots">...</span>
+            <span class="page">67</span>
+            <span class="page">68</span>
+            <span class="next">Next →</span>
+        </div>
+    </div>
+</body>
+</html>
